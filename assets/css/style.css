@@ -696,10 +696,11 @@ body.light-mode #home img#notebook-2-white {
 }
 
 #projects .card .mandar {
+  position: absolute;
   max-width: 100%;
   height: auto;
   display: flex;
-  margin-left: 10px;
+  margin-left: 70px;
   float: right;
   margin-top: -20px;
   margin-right: 185px;
@@ -1616,18 +1617,26 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   }
 }
 
-@media (max-width: 720px) {
-  #projects .card .mandar,
+@media (max-width: 500px) {
+  #projects .card .mandar{
+    right: 93px;
+  }
   #projects .card .balaoFala{
-    position: absolute;
-    right: 150px;
+    left: 55px;
   }
 }
 
-@media (max-width: 480px) {
-  #projects .card .mandar,
+
+@media (max-width: 400px) {
+  
   #projects .card .balaoFala{
     position: absolute;
-    right: 150px;
+    left: 58px;
+  }
+  #projects .card .mandar{
+    left: 10px;
+    position:static;
+    
   }
 }
+
