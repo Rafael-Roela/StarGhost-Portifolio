@@ -97,3 +97,13 @@ ScrollReveal({
   #contact,
   #contact header`
 );
+
+function showButtons(card) {
+  const buttons = card.querySelector('.buttons');
+  buttons.style.opacity = '1';
+}
+
+function hideButtons(card) {
+  const buttons = card.querySelector('.buttons');
+  buttons.style.opacity = '0';
+}
