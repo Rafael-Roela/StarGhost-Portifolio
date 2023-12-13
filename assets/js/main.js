@@ -1,38 +1,13 @@
 
 
 const navigation = document.querySelector("#navigation");
-const backToTopButton = document.querySelector("#backToTopButton");
 const toggle = document.querySelector("#sw-checkbox");
-const projectsSection = document.querySelector("#projects .wrapper");
 
-const notebook_1 = document.querySelector("#notebook-1");
-const notebook_2 = document.querySelector("#notebook-2");
-const notebook_2_white = document.querySelector("#notebook-2-white");
-const vidro = document.querySelector("#vidro");
 
-window.addEventListener("load", function begin() {
-  projetos(projectsSection);
-  const desafioBtn = document.querySelector("#desafio");
-
-  desafioBtn.addEventListener("click", () => {
-    desafios(projectsSection);
-    document
-      .querySelector("#backToProjectsBtn")
-      .addEventListener("click", begin);
-  });
-});
 
 window.addEventListener("scroll", onScroll);
 onScroll();
 
-window.onload = setTimeout(() => {
-  notebook_1.style.opacity = 0;
-
-  notebook_1.style.animation = "none";
-  notebook_2.style.animation = "none";
-  notebook_2_white.style.animation = "none";
-  vidro.style.animation = "none";
-}, 4000);
 
 function onScroll() {
   showNavOnScroll();
@@ -122,7 +97,3 @@ ScrollReveal({
   #contact,
   #contact header`
 );
-
-toggle.addEventListener("change", () => {
-  document.body.classList.toggle("light-mode");
-});
